@@ -19,6 +19,8 @@ public class Autosuggestions_bt {
 		
 		System.out.println("I'm sai sowmya");
 		
+		System.out.println("Hello");
+		
 		driver.get("https://www.makemytrip.com");    //open the url
 		
 		driver.manage().window().maximize();      //maximize the window
