@@ -14,29 +14,10 @@ public class BaseClass {
 	@Test
 	public void BC() throws Throwable {
 		
-		WebDriver driver;
-		String browser = System.getProperty("BROSWER");
+		WebDriver driver = new ChromeDriver();
 		
-		//String browser = System.getProperty("browser");
-		switch(browser) {
-		
-		case "chrome" :
-			
-			driver = new ChromeDriver();
-			break;
-			
-		case "edge" :
-			
-			driver = new EdgeDriver();
-			break;
-			
-		case "Firefox" :
-			
-			driver = new FirefoxDriver();
-			break;
-		
-		}
-		
+		driver.get("https://www.makemytrip.com");
+	
 	System.out.println("Executed Success");
 		
 	}
