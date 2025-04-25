@@ -5,12 +5,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 
 
 public class BaseClass {
 
-	@BeforeClass(groups= {"smoke","regression"})
+	@Test
 	public void BC() throws Throwable {
 		
 		WebDriver driver;
